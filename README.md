@@ -9,20 +9,6 @@
 ## 使用方法
 - 进入任意网页，点击扩展图标或弹窗按钮，自动截取长图并下载。
 
-## 发布到 Microsoft Edge Add-ons
-
-准备并上传到 Microsoft Partner Center 的快速步骤：
-
-1. 确认 `manifest.json` 中 `name`、`description`、`homepage_url`、`icons` 已填写。
-2. 包含隐私说明文件 `PRIVACY.md`（可把其内容放到你的网站并填写隐私政策 URL）。
-3. 执行打包脚本生成 ZIP：
-```bash
-chmod +x package.sh
-./package.sh
-```
-注意：作为个人开发者，我已将 `manifest.json` 的 `author` 和 `homepage_url` 更新为示例个人信息，并将 `PRIVACY.md` 的联系邮箱设置为 `wanzhao0@163.com`。如果需要更改显示名称或主页链接，请编辑 `manifest.json`。你也可以把 `PRIVACY.md` 内容发布到 GitHub Pages 或个人网站，并把该 URL 填到 Partner Center 的隐私政策字段中。
-4. 登录 Microsoft Partner Center（https://partner.microsoft.com），创建扩展，上传 ZIP、图标和屏幕截图，填写隐私政策 URL 与支持邮箱，然后提交审核。
-
 详细发布说明见 `EDGE_PUBLISH.md`。
 
 ## 权限说明
