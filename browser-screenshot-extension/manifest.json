@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "One-Click Long Screenshot",
+  "version": "0.1.0",
+  "description": "一键截取网页长图，自动拼接并下载。支持横向/纵向全页截图。",
+  "author": "个人开发者 wanzhao0",
+  "homepage_url": "https://github.com/wanzhao0/browser-screenshot-extension",
+  "permissions": ["activeTab", "scripting", "downloads", "windows"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_icon": "icon.png"
+  },
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
+  "short_name": "LongShot",
+  "offline_enabled": false,
+  "host_permissions": ["<all_urls>"],
+  "web_accessible_resources": [
+    {
+      "resources": ["icon.png"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
